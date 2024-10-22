@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #ffa734;
+    background: linear-gradient(to right, #eeeeee, #fdd8a0);
+    height: 100vh;
+}
+
+.container{
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+}
+
+
+
+
+.container span{
+    font-size: 5px;
+}
+
+
+.container button{
+    background-color: #512da8;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.container button.hidden{
+    background-color: transparent;
+    border-color: #fff;
+}
+
+
+/* Estilos para hacer la tabla más pequeña en pantallas pequeñas */
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    font-size: 0.8rem; /* Ajusta el tamaño de la fuente */
+}
+
+.table th, .table td {
+    padding: 0.5rem; /* Ajusta el padding */
+}
+
+@media (max-width: 768px) {
+    .table {
+        font-size: 0.8rem; /* Reduce aún más el tamaño de la fuente en pantallas pequeñas */
+    }
+
+    .table th, .table td {
+        padding: 0.1rem; /* Reduce el padding en pantallas pequeñas */
+    }
+}
+
+/* Para pantallas con un ancho máximo de 467 píxeles (teléfonos móviles y pantallas más pequeñas) */
+@media (max-width: 467px) {
+    
+
+    /*  (Observación) */
+       .table td:nth-child(3), 
+       .table th:nth-child(3) {
+        display: none;
+        }
+    }
+    /* Para pantallas con un ancho máximo de 767 píxeles (teléfonos móviles y pantallas más pequeñas) */
+    @media (max-width: 767px) {
+    
+
+    /*  (Observación) */
+       .table td:nth-child(4), 
+       .table th:nth-child(4) {
+        display: none;
+        }
+    }
